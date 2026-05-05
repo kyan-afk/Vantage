@@ -32,6 +32,44 @@
             android:name=".LoginActivity"
             android:exported="false" />
 
+        <!-- 3. The Register Screen -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- 4. The Dashboard (Search & List) -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <!-- 5. The Site Details Screen -->
+        <activity
+            android:name=".SiteDetailsActivity"
+            android:exported="false" />
+
+        <!-- 6. The 3D Floorplan Viewer -->
+        <activity
+            android:name=".FloorplanActivity"
+            android:exported="false" />
+
+        <!-- 7. NEW: The Map Activity -->
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+
+        <!-- Add your Google Maps API Key here -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY_HERE" />
+
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+
+        <!-- 9. NEW: Admin Management Panel -->
+        <activity
+            android:name=".AdminPanelActivity"
+            android:exported="false" />
 
     </application>
 
