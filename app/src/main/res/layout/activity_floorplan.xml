@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- This placeholder represents the 3D Render Area -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[ 3D FLOORPLAN VIEW ]"
+        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true" />
+
+    <!-- Navigation Overlay -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/btnMoveForward"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="UP"
+            android:backgroundTint="#4A3728"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnTurnLeft"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4A3728"
+                android:text="LEFT" />
+            <Button
+                android:id="@+id/btnTurnRight"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4A3728"
+                android:text="RIGHT" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMoveBack"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="DOWN"
+            android:backgroundTint="#4A3728"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnExit3D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:backgroundTint="#4A3728"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>

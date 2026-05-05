@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissions needed for the Maps API -->
+    //<uses-permission android:name="android.permission.INTERNET" />
+    //<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,15 +16,61 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Vantage"
         tools:targetApi="31">
+
+        <!-- 1. The Main Router -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 2. The Login Screen -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- 3. The Register Screen -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- 4. The Dashboard (Search & List) -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <!-- 5. The Site Details Screen -->
+        <activity
+            android:name=".SiteDetailsActivity"
+            android:exported="false" />
+
+        <!-- 6. The 3D Floorplan Viewer -->
+        <activity
+            android:name=".FloorplanActivity"
+            android:exported="false" />
+
+        <!-- 7. NEW: The Map Activity -->
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+
+        <!-- Add your Google Maps API Key here -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY_HERE" />
+
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+
+        <!-- 9. NEW: Admin Management Panel -->
+        <activity
+            android:name=".AdminPanelActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

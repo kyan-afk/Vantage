@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F0EB">
+
+    <!-- Simple Top Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#4A3728">
+
+        <Button
+            android:id="@+id/btnMapReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return"
+            android:textSize="12sp"
+            android:backgroundTint="#8C7B6E" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Map"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Placeholder for the Map -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="[ Map Loading Placeholder ]"
+            android:textColor="#4A3728"
+            android:textStyle="italic" />
+    </FrameLayout>
+
+    <!-- Bottom Info -->
+    <TextView
+        android:id="@+id/tvMapLocationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Target: Museo Sugbo"
+        android:textStyle="bold"
+        android:textColor="#4A3728"
+        android:gravity="center" />
+
+</LinearLayout>

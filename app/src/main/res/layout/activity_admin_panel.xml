@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F0EB">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Control Panel"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4A3728"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Site Name Input -->
+    <EditText
+        android:id="@+id/etSiteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Site Name"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Price Input -->
+    <EditText
+        android:id="@+id/etSitePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Set Entrance Fee (e.g., ₱50)"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Time Input -->
+    <EditText
+        android:id="@+id/etSiteTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Set Opening Hours (e.g., 8AM - 5PM)"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnAddSite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Site Details"
+        android:backgroundTint="#4A3728"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnRemoveSite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Site"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#8C7B6E"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnAdminExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit Admin"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#2D2D2D" />
+
+</LinearLayout>
