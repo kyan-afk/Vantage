@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/tvDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Museo Sugbo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4A3728" />
+
+    <TextView
+        android:id="@+id/tvDetailType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category: History Museum"
+        android:layout_marginTop="4dp"
+        android:textColor="#8C7B6E" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E0D5C8"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDetailDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The provincial museum of Cebu, once a prison during the Spanish era."
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operating Hours"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvDetailHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9:00 AM - 5:00 PM"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrance Fee"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvDetailFee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="₱30.00"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/btnViewMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4A3728"
+        android:text="View Map Location"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnOpen3D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View 3D Floorplan"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#4A3728" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:backgroundTint="#4A3728"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
