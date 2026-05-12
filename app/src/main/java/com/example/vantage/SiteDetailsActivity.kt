@@ -67,6 +67,7 @@ class SiteDetailsActivity : AppCompatActivity() {
         val hours = intent.getStringExtra("siteHours")
         val fee = intent.getStringExtra("siteFee")
 
+
         // Link to your activity_details.xml IDs
         findViewById<TextView>(R.id.tvDetailName).text = name
         findViewById<TextView>(R.id.tvDetailDesc).text = desc
