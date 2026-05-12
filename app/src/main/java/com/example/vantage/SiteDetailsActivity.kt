@@ -44,7 +44,6 @@
 //    }
 //}
 
-
 package com.example.vantage
 import android.content.Intent
 import android.os.Bundle
