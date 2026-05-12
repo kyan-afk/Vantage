@@ -30,20 +30,11 @@
     </RelativeLayout>
 
     <!-- Placeholder for the Map -->
-    <FrameLayout
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#FFFFFF">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="[ Map Loading Placeholder ]"
-            android:textColor="#4A3728"
-            android:textStyle="italic" />
-    </FrameLayout>
+        android:layout_weight="1" />
 
     <!-- Bottom Info -->
     <TextView
