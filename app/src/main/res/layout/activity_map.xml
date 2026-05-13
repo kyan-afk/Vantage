@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:background="#F5F0EB">
 
-    <!-- Simple Top Bar -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,14 +28,39 @@
             android:textStyle="bold" />
     </RelativeLayout>
 
-    <!-- Placeholder for the Map -->
     <org.osmdroid.views.MapView
         android:id="@+id/mapView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <!-- Bottom Info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="#E5DED5">
+
+        <Button
+            android:id="@+id/btnDrive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="Drive"
+            android:backgroundTint="#4A3728" />
+
+        <Button
+            android:id="@+id/btnCommute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="Commute"
+            android:backgroundTint="#4A3728" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tvMapLocationName"
         android:layout_width="match_parent"

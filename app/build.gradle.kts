@@ -51,9 +51,7 @@
 //    implementation("org.osmdroid:osmdroid-android:6.1.18")
 //
 
-
 plugins {
-    // Use 'id' instead of 'alias' to match your Project-level manual setup
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
@@ -65,7 +63,7 @@ android {
     defaultConfig {
         applicationId = "com.example.vantage"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 36 // Updated this to match compileSdk for better compatibility
         versionCode = 1
         versionName = "1.0"
 
@@ -91,17 +89,16 @@ android {
 }
 
 dependencies {
-    // Standard libraries (keep these as 'libs' if they work, or use direct strings)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
-    // REMOVED duplicate play-services-maps to keep it clean
-
-    // YOUR FREE MAP: OpenStreetMap (No credit card required)
-    implementation("org.osmdroid:osmdroid-android:6.1.18")
+    // YOUR FREE MAP: OpenStreetMap
+    // UPGRADED osmdroid to 6.1.20 to match the routing library's requirements
+    implementation("org.osmdroid:osmdroid-android:6.1.20")
+    implementation("com.github.MKergall:osmbonuspack:6.9.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
